@@ -12,15 +12,7 @@ Original Data information:
 
 
 ### directory layout
-
-.
-├── src                   # Compiled files (alternatively `dist`)
-├── data                    # Documentation files (alternatively `doc`)
-├── src                     # Source files (alternatively `lib` or `app`)
-├── test                    # Automated tests (alternatively `spec` or `tests`)
-├── tools                   # Tools and utilities
-├── LICENSE
-└── README.md
+```
 .
 ├── src                                                                                           # R script                               
 ├── data                                                                                          # meta-data files
@@ -31,6 +23,7 @@ Original Data information:
 │                  └── ocean_meta_data.csv                                                        # ocean analysis data1. 
 ├── LICENSE
 └── README.md
+```
 
 ### Statistical Analysis
 1. load the data 
