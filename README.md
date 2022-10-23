@@ -12,6 +12,15 @@ Original Data information:
 
 
 ### directory layout
+
+.
+├── src                   # Compiled files (alternatively `dist`)
+├── data                    # Documentation files (alternatively `doc`)
+├── src                     # Source files (alternatively `lib` or `app`)
+├── test                    # Automated tests (alternatively `spec` or `tests`)
+├── tools                   # Tools and utilities
+├── LICENSE
+└── README.md
 .
 ├── src                                                                                           # R script                               
 ├── data                                                                                          # meta-data files
