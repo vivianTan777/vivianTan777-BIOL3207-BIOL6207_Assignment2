@@ -1,5 +1,5 @@
 # BIOL3207-BIOL6207_Assignment2
-Meta-analysis of Ocean Acidification Effects on Behaviour for the paper by Clark et al (2020) https://www.nature.com/articles/s41586-019-1903-y. This study was an experimental study across 5-6 different reef fish that looked at comparing the effect of elevated CO2 (in ppm) relative to some control on fish behaviour.
+Meta-analysis of Ocean Acidification Effects on Behaviour.
 
 ## Getting Started
 ### meta-data 
