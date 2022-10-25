@@ -1,14 +1,12 @@
 # BIOL3207-BIOL6207_Assignment2
-Meta-analysis of Ocean Acidification Effects on Behaviour.
+Meta-analysis of Ocean Acidification Effects on fish's Behaviour.
 
 ## Getting Started
 ### meta-data 
-Original Data information: 
-"Data, analysis script and associated files for:"            
-"Clark TD, Raby GD, Roche DG, Binning SA, Speers-Roesch B, Jutfelt F, Sundin J (in prep) Ocean acidification does not impair the behaviour of coral reef fishes"            
-             
-"Data collected by TDC, GDR, DGR, SAB, BSR, FJ and JS. Please refer to the manuscript for data collection methods and statistical analyses. For questions or to notify the authors if any errors are identified in the data, please contact Tim Clark (t.clark@deakin.edu.au), Graham Raby (graham.d.raby@gmail.com), and/or Dominique Roche (dominique.roche@mail.mcgill.ca)."    
-
+ocean_meta_data: Result of Studies for ocean acidification studies on fish behavior. Data is coming from various studies' result from 2009 to 2020.
+meta-data_ocean_meta: Explaination of all the columns in ocean meta data.
+clark_paper_data: Information for clark's paper: Ocean acidification does not impair the behaviour of coral reef fishes.
+OA_activitydat_20190302: the experiment data for clark's study
 
 
 ### directory layout
@@ -25,11 +23,16 @@ Original Data information:
 └── README.md
 ```
 
-### Statistical Analysis
-1. load the data 
-2. Correctly calculate the log response ratio (lnRR) effect size using metafor’s escalc() function.
-3. meta-analytic model fitted to the data that controls for the sampling variance of lnRR, using metafor’s rma.mv() function.
-4. Testing publication bias using Funnel plot, Time-lag plot.
-5. Formal meta-regression model to test time-lag bias and file-drawer biases.
-
-
+### Statistical Analysis workflow
+1. Generate data for Clark's paper
+  1.1. load the data from OA_activitydat_20190302.csv, 
+  1.2. generate summary statistics 
+  1.3. merge with clark_paper_data.csv
+2. Merge the result from step 1 with ocean_meta_data.csv
+3. Correctly calculate the log response ratio (lnRR) effect size using metafor’s escalc() function for data from step 2.
+4. meta-analytic model fitted to the data from step2 for the sampling variance of lnRR, using metafor’s rma.mv() function with random effect of study and observation. 
+5. Testing publication bias using Funnel plot for data from step 2.
+6. Using Time-lag plot to test effect sizes changes over time for data from step 2.
+7. Formal meta-regression model to test time-lag bias and file-drawer bias for data from step 2.
+   7.1. including year as a fixed effect
+   7.2. including inverse sampling variance as a fixed effect
