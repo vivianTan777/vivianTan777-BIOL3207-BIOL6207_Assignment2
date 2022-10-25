@@ -3,10 +3,10 @@ Meta-analysis of Ocean Acidification Effects on fish's Behaviour.
 
 ## Getting Started
 ### meta-data 
-ocean_meta_data: Result of Studies for ocean acidification studies on fish behavior. Data is coming from various studies' result from 2009 to 2020.
-meta-data_ocean_meta: Explaination of all the columns in ocean meta data.
-clark_paper_data: Information for clark's paper: Ocean acidification does not impair the behaviour of coral reef fishes.
-OA_activitydat_20190302: the experiment data for clark's study
+1. ocean_meta_data: Result of Studies for ocean acidification studies on fish behavior. Data is coming from various studies' result from 2009 to 2020.
+2. meta-data_ocean_meta: Explaination of all the columns in ocean meta data.
+3. clark_paper_data: Information for clark's paper: Ocean acidification does not impair the behaviour of coral reef fishes.
+4. OA_activitydat_20190302: the experiment data for clark's study
 
 
 ### directory layout
