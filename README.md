@@ -12,13 +12,13 @@ OA_activitydat_20190302: the experiment data for clark's study
 ### directory layout
 ```
 .
-├── src                                                                                           # R script                               
-├── data                                                                                          # meta-data files
+├── src                                                                            # R script                               
+├── data                                                                           # meta-data files
 │       ├── assignment2                                                                     
-│                  ├── clark_paper_data.csv                                                       # meta-data for clark paper
-│                  ├── meta-data_ocean_meta.csv                                                   # ocean meta data from all paper
-│                  ├── OA_activitydat_20190302_BIOL3207.csv                                       # fish activity information from clark paper
-│                  └── ocean_meta_data.csv                                                        # ocean analysis data1. 
+│                  ├── clark_paper_data.csv                                        # meta-data for clark paper
+│                  ├── meta-data_ocean_meta.csv                                    # ocean meta data from all paper
+│                  ├── OA_activitydat_20190302_BIOL3207.csv                        # fish activity information from clark paper
+│                  └── ocean_meta_data.csv                                         # ocean analysis data1. 
 ├── LICENSE
 └── README.md
 ```
